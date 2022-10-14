@@ -221,105 +221,106 @@ const App = () => {
 
   return (
     <div>
-      {play ?
-        <button onClick={() => handlePlayStop()}>Stop</button>
-        :
-        <button onClick={() => handlePlayStop()}>Play</button>
-      }
-        <div className='sequencerContainer'>
-          <div className='stepContainer'>
-            {steps.map((step, index) => {
-              return (
-                <SynthStep
-                  step={step}
-                  index={index}
-                  handleActivate={handleActivate}
-                  handleDeactivate={handleDeactivate}
-                  note={notes[0]}
-                />
-              )
-            })}
-          </div>
-          <div className='stepContainer'>
-            {steps1.map((step, index) => {
-              return (
-                <SynthStep
-                  step={step}
-                  index={index}
-                  handleActivate={handleActivate}
-                  handleDeactivate={handleDeactivate}
-                  note={notes[1]}
-                />
-              )
-            })}
-          </div>
-          <div className='stepContainer'>
-            {steps2.map((step, index) => {
-              return (
-                <SynthStep
-                  step={step}
-                  index={index}
-                  handleActivate={handleActivate}
-                  handleDeactivate={handleDeactivate}
-                  note={notes[2]}
-                />
-              )
-            })}
-          </div>
-          <div className='stepContainer'>
-            {steps3.map((step, index) => {
-              return (
-                <SynthStep
-                  step={step}
-                  index={index}
-                  handleActivate={handleActivate}
-                  handleDeactivate={handleDeactivate}
-                  note={notes[3]}
-                />
-              )
-            })}
-          </div>
-          <div className='stepContainer'>
-            {steps4.map((step, index) => {
-              return (
-                <SynthStep
-                  step={step}
-                  index={index}
-                  handleActivate={handleActivate}
-                  handleDeactivate={handleDeactivate}
-                  note={notes[4]}
-                />
-              )
-            })}
-          </div>
-          <div className='stepContainer'>
-            {steps5.map((step, index) => {
-              return (
-                <SynthStep
-                  step={step}
-                  index={index}
-                  handleActivate={handleActivate}
-                  handleDeactivate={handleDeactivate}
-                  note={notes[5]}
-                />
-              )
-            })}
-          </div>
-          <div className='stepContainer'>
-            {steps6.map((step, index) => {
-              return (
-                <SynthStep
-                  step={step}
-                  index={index}
-                  handleActivate={handleActivate}
-                  handleDeactivate={handleDeactivate}
-                  note={notes[6]}
-                />
-              )
-            })}
-          </div>
+      <div className='sequencerContainer'>
+        <div className='stepContainer'>
+          {steps.map((step, index) => {
+            return (
+              <SynthStep
+                step={step}
+                index={index}
+                handleActivate={handleActivate}
+                handleDeactivate={handleDeactivate}
+                note={notes[0]}
+              />
+            )
+          })}
         </div>
+        <div className='stepContainer'>
+          {steps1.map((step, index) => {
+            return (
+              <SynthStep
+                step={step}
+                index={index}
+                handleActivate={handleActivate}
+                handleDeactivate={handleDeactivate}
+                note={notes[1]}
+              />
+            )
+          })}
+        </div>
+        <div className='stepContainer'>
+          {steps2.map((step, index) => {
+            return (
+              <SynthStep
+                step={step}
+                index={index}
+                handleActivate={handleActivate}
+                handleDeactivate={handleDeactivate}
+                note={notes[2]}
+              />
+            )
+          })}
+        </div>
+        <div className='stepContainer'>
+          {steps3.map((step, index) => {
+            return (
+              <SynthStep
+                step={step}
+                index={index}
+                handleActivate={handleActivate}
+                handleDeactivate={handleDeactivate}
+                note={notes[3]}
+              />
+            )
+          })}
+        </div>
+        <div className='stepContainer'>
+          {steps4.map((step, index) => {
+            return (
+              <SynthStep
+                step={step}
+                index={index}
+                handleActivate={handleActivate}
+                handleDeactivate={handleDeactivate}
+                note={notes[4]}
+              />
+            )
+          })}
+        </div>
+        <div className='stepContainer'>
+          {steps5.map((step, index) => {
+            return (
+              <SynthStep
+                step={step}
+                index={index}
+                handleActivate={handleActivate}
+                handleDeactivate={handleDeactivate}
+                note={notes[5]}
+              />
+            )
+          })}
+        </div>
+        <div className='stepContainer'>
+          {steps6.map((step, index) => {
+            return (
+              <SynthStep
+                step={step}
+                index={index}
+                handleActivate={handleActivate}
+                handleDeactivate={handleDeactivate}
+                note={notes[6]}
+              />
+            )
+          })}
+        </div>
+      </div>
+      {play ?
+        <button className='stopBtn' onClick={() => handlePlayStop()}>Stop</button>
+        :
+        <button className='playBtn' onClick={() => handlePlayStop()}>Play</button>
+      }
     </div>
+
   );
 }
 

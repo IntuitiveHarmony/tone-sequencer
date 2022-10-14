@@ -1,3 +1,12 @@
+.playBtn {
+  margin-left: 2em;
+}
+.stopBtn {
+  margin-left: 2em;
+}
+.sequencerContainer {
+  margin: 2em;
+}
 .stepContainer {
   display: flex;
 }
