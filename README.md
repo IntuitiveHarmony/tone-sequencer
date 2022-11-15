@@ -35,7 +35,7 @@ const container = document.getElementById('root');
 const root = createRoot(container);
 ```
 4. Wrap the `<App />` element with `<Provider store{store}>`
-```javaScript
+```ejx
 <React.StrictMode>
   <Provider store={store}>
     <App />
