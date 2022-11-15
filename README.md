@@ -10,8 +10,16 @@ In the root dir:
 `npm i @reduxjs/toolkit`
 
 In index.js:
-1. Change `import ReactDOM from 'react-dom/client'` to `import { createRoot } from 'react-dom/client'`
-2. Add 
+1. Change 
+```javaScript
+import ReactDOM from 'react-dom/client'`
+```
+to 
+```javaScript
+import { createRoot } from 'react-dom/client'`
+```
+
+3. Add 
 ```javaScript
 import { Provider } from 'react-redux';
 import { store } from './app/store';
