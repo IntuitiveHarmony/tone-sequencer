@@ -4,6 +4,10 @@ This project serves two purposes:
 1. familiarize myself with [Tone.js](https://tonejs.github.io/)
 2. familiarize myself with [Redux Toolkit](https://redux-toolkit.js.org/)
 
-## Set Up Redux-Toolkit
+## Set Up Redux Toolkit
 
+In the root dir:
 `npm i @reduxjs/toolkit`
+
+In index.js
+
