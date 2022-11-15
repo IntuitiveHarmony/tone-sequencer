@@ -14,7 +14,7 @@ In index.js:
 ```javaScript
 import ReactDOM from 'react-dom/client'`
 ```
-  to 
+> to 
 ```javaScript
 import { createRoot } from 'react-dom/client'`
 ```
@@ -29,7 +29,7 @@ import { store } from './app/store';
 ```javaScript
 const root = ReactDOM.createRoot(document.getElementById('root'));
 ```
-  to
+> to
 ```javaScript
 const container = document.getElementById('root');
 const root = createRoot(container);
