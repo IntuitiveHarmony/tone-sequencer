@@ -7,7 +7,24 @@ This project serves two purposes:
 ## Set Up Redux Toolkit
 
 In the root dir:
-`npm i @reduxjs/toolkit`
+`npm i @reduxjs/toolkit react-redux`
+
+In the src directory add a app called app
+In the app directory create a file called store.js
+>This stores the state of the entire app
+
+Inside store.js
+```javaScript
+import { configureStore } from "@reduxjs/toolkit";
+
+export const store = configureStore({
+    reducer:
+              {
+       // This is where we will put our reducers later
+    }
+```
+
+
 
 In index.js:
 1. Change 
