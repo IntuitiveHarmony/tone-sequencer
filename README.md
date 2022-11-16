@@ -57,8 +57,8 @@ In the features folder add a folder that will contain your slice.  Name it somet
 Add a file that is this folder name plus slice.js
 
 Examples:
--[] /counter/counterSlice.js
--[x] /sequencer/sequencerSlice.js
+- [ ] /counter/counterSlice.js
+- [x] /sequencer/sequencerSlice.js
 
 In sequencerSlice.js
 1. Import createSlice from @reduxjs/toolkit
