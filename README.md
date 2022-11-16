@@ -3,7 +3,7 @@
 This project serves two purposes:
 1. familiarize myself with [Tone.js](https://tonejs.github.io/)
 2. familiarize myself with [Redux Toolkit](https://redux-toolkit.js.org/)
-
+<pre>
 ## Set Up Redux Toolkit
 
 
@@ -17,7 +17,7 @@ In the root dir:
 
 In the src directory add a folder called app
 In the app directory create a file called store.js
-
+</pre>
 
 Inside store.js
 1. Add
