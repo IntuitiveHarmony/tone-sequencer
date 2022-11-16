@@ -26,10 +26,9 @@ Inside store.js
 import { configureStore } from "@reduxjs/toolkit";
 
 export const store = configureStore({
-    reducer:
-              {
+    reducer: {
        // This is where we will put our reducers later
-    }
+    })
 ```
 
 In index.js:
@@ -77,9 +76,53 @@ const initialState = {
   row7: [null, null, null, null, null, null, null, null]
 }
 ```
+3. Define and export the slice
+```javaScript
+ export const sequencerSlice = createSlice({
+    name: 'sequencer',
+    initialState,
+    reducers: {
+        // these are the actions
+        activateRow1: (state) => {
+        state.row1 
+      }
+    }
+ })
+```
 
+4. Export actions
+```javaScript
+export const { activateRow1 } = counterSlice.actions;
+```
 
+5. Export reducer
+```javaScript
+export default sequencerSlice.reducer;
+```
 
+### Import reducer to the store
+In store.js 
+1. Import
+```javaScript
+import sequencerReducer from '../features/sequencer/sequencerSlice'
+```
+2. Add reducer to the store in our place holder from eairler
+```javaScript
+export const store = configureStore({
+    reducer: {
+       // This is where we will put our reducers later
+       sequencer: sequencerReducer
+    })
+```
+
+### Import Actions, useSelector and use dispatch
+Make a new component in the features folder called Sequences.js
+
+In Sequences.js
+```javaScript
+import { useSelector, useDispatch } from 'react-redux';
+import { activateRow1 } from './sequencerSlice'
+```
 
 
 
