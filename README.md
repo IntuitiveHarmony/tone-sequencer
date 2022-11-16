@@ -6,6 +6,7 @@ This project serves two purposes:
 
 ## Set Up Redux Toolkit
 
+### Install redux and redux toolkit
 In the root dir:
 `npm i @reduxjs/toolkit react-redux`
 
