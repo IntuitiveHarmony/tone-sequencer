@@ -16,6 +16,7 @@ In the root dir:
 >This stores the state of the entire app
 
 In the src directory add a folder called app
+
 In the app directory create a file called store.js
 
 
@@ -47,8 +48,35 @@ import { Provider } from 'react-redux';
 </React.StrictMode>
 ```
 ### Creating a slice
+> This is where we define we will 'slice' the state objects into multiple slices of state and define reducer logic 
+
 In the src directory add a folder called features
-In the features folder add a folder called 
+
+In the features folder add a folder that will contain your slice.  Name it someting that makes sense semanticly (what does it do?)
+
+Add a file that is this folder name plus slice.js
+
+Examples:
+-[] /counter/counterSlice.js
+-[x] /sequencer/sequencerSlice.js
+
+In sequencerSlice.js
+1. Import createSlice from @reduxjs/toolkit
+```javaScript
+import { createSlice } from '@reduxjs/toolkit'
+```
+2. Set an intitial state
+```javaScript
+const initialState = {
+  row1: [null, null, null, null, null, null, null, null],
+  row2: [null, null, null, null, null, null, null, null],
+  row3: [null, null, null, null, null, null, null, null],
+  row4: [null, null, null, null, null, null, null, null],
+  row5: [null, null, null, null, null, null, null, null],
+  row6: [null, null, null, null, null, null, null, null],
+  row7: [null, null, null, null, null, null, null, null]
+}
+```
 
 
 
