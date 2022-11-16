@@ -11,6 +11,7 @@ In the root dir:
 
 ### Set up the store
 >This stores the state of the entire app
+
 In the src directory add a folder called app
 In the app directory create a file called store.js
 
