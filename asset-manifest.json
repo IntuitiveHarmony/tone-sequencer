@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/tone-sequencer/static/css/main.0f47145f.css",
-    "main.js": "/tone-sequencer/static/js/main.1e9bcdcb.js",
+    "main.js": "/tone-sequencer/static/js/main.16bc2555.js",
     "static/js/787.b1df8054.chunk.js": "/tone-sequencer/static/js/787.b1df8054.chunk.js",
     "static/media/logo.svg": "/tone-sequencer/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/tone-sequencer/index.html",
     "main.0f47145f.css.map": "/tone-sequencer/static/css/main.0f47145f.css.map",
-    "main.1e9bcdcb.js.map": "/tone-sequencer/static/js/main.1e9bcdcb.js.map",
+    "main.16bc2555.js.map": "/tone-sequencer/static/js/main.16bc2555.js.map",
     "787.b1df8054.chunk.js.map": "/tone-sequencer/static/js/787.b1df8054.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0f47145f.css",
-    "static/js/main.1e9bcdcb.js"
+    "static/js/main.16bc2555.js"
   ]
 }
