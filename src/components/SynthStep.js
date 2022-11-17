@@ -1,8 +1,5 @@
+import { useDispatch } from 'react-redux'
 
-// const handleActivate = (note, index) => {
-//   // setNotes()
-//   console.log(note + ' ' + index)
-// }
 
 const SynthStep = (props) => {
   return (
